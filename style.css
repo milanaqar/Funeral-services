@@ -1,0 +1,82 @@
+@import url('https://googleapis.com');
+body {
+    font-family: 'GFS Artemisia', Georgia, serif;
+    font-size: 17px; 
+    line-height: 1.7;
+    color: #2c2520; 
+	background-color:#FAEBD7
+}
+h1, h2, h3 {
+    font-family: 'Cinzel', 'GFS Artemisia', serif; 
+    font-weight: 700;
+    text-transform: uppercase; 
+    letter-spacing: 2px; 
+    color: #4a3728; 
+}
+.services {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.services-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.service-card {
+    width: 300px;
+    padding: 25px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-8px);
+}
+
+.service-card h3 {
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #8b0000;
+    margin-top: 15px;
+}
+.search-btn {
+    font-family: 'Cinzel', 'GFS Artemisia', serif; 
+    font-weight: 700;
+    text-transform: uppercase;     
+    letter-spacing: 1px;       
+    font-size: 15px;
+    
+    background-color: #4a3728;     
+    color: #FAEBD7;                /* Το AntiqueWhite χρώμα του φόντου σας για αντίθεση */
+    
+    padding: 12px 28px;            /* Απόσταση κειμένου από το περίγραμμα */
+    border: 2px solid #4a3728;     /* Περίγραμμα στο ίδιο χρώμα */
+    border-radius: 6px;            /* Ελαφρώς στρογγυλεμένες γωνίες που ταιριάζουν με τα cards (12px) */
+    cursor: pointer;
+    
+    transition: all 0.3s ease;     /* Ομαλό εφέ μετάβασης */
+}
+
+.search-btn:hover {
+    background-color: #8b0000;     /* Αλλαγή στο σκούρο κόκκινο των τιμών σας */
+    border-color: #8b0000;         /* Αλλαγή και του περιγράμματος σε κόκκινο */
+    color: #fff;                   /* Καθαρό λευκό κείμενο για να ξεχωρίζει */
+    transform: translateY(-3px);   /* Μικρή ανασήκωση, όπως κάνουν και τα service-cards σας */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15); /* Σκιά ίδια με τα cards σας */
+}
+.lang-container {
+    display: flex;
+    justify-content: flex-end; /* Σπρώχνει όλο το περιεχόμενο δεξιά */
+    gap: 10px;                 
+    padding: 10px 20px;        
+}
